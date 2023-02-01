@@ -1,0 +1,259 @@
+@media only screen and (max-width: 1024px) {
+  .title.big {
+    font-size: 56px;
+  }
+  .title.big span {
+    font-size: 56;
+  }
+
+  .header {
+    padding: 20px 0px;
+  }
+
+  .search__img {
+    height: auto;
+    aspect-ratio: 3/2;
+  }
+
+  .category__box {
+    padding: 20px;
+  }
+  .category__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .gradient {
+    margin-top: 50px;
+  }
+
+  .information__img {
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+
+  .recom .row {
+    overflow: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 30px;
+  }
+  .recom .col-3,
+  .recom__box {
+    width: 300px;
+  }
+  .recom .col-3 {
+    margin-right: 20px;
+  }
+
+  .information__box.left,
+  .information__box {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__link {
+    margin: 0 12px;
+  }
+  .title.big span,
+  .title.big {
+    font-size: 50px;
+  }
+  .title.big {
+    padding: 0px 20px;
+  }
+
+  .search__box {
+    flex-wrap: wrap;
+    margin: 0px 20px;
+    padding: 10px 20px;
+  }
+  .search__item {
+    width: 50%;
+    padding: 0;
+    margin: 10px 0px;
+    margin-right: 0;
+    border: none;
+  }
+  .search__box button {
+    margin-left: 0px;
+  }
+
+  .search__item select,
+  .search__item input {
+    width: calc(100% - 32px);
+  }
+
+  .information__img {
+    aspect-ratio: 5/3;
+    margin-bottom: 20px;
+  }
+  .information__text,
+  .title {
+    text-align: center;
+  }
+  .information__box .slogan {
+    margin: auto;
+  }
+
+  .justify-content-center-md {
+    justify-content: center;
+  }
+
+  .order-1-md {
+    order: 1;
+  }
+  .order-2-md {
+    order: 2;
+  }
+
+  .about__box,
+  .about .col-4 {
+    width: 300px;
+  }
+  .about .col-4 {
+    margin-right: 30px;
+  }
+  .about .row {
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__logo {
+    order: 1;
+  }
+  .footer__social {
+    order: 2;
+    margin: 10px 0;
+  }
+  .footer__menu a {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer__menu {
+    order: 3;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile__nav {
+    display: flex;
+    position: fixed;
+    right: -1000px;
+    top: 0;
+    background: #0000007e;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    text-align: center;
+    transition: 0.3s;
+  }
+ body.open .mobile__nav{
+    right: 0;
+  }
+
+  .header {
+    z-index: 3;
+  }
+
+  .header__link {
+    margin: 10px auto;
+    font-size: 24px;
+    display: inline-block;
+  }
+  .mobile__nav button {
+    font-size: 20px;
+  }
+
+  .header__toggle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: none;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .header__toggle span::after,
+  .header__toggle span::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    display: inline-block;
+    background: #fff;
+    transition: 0.3s;
+  }
+  .header__toggle span::before {
+    top: 10px;
+  }
+
+  .header__toggle span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .open .header__toggle span {
+    transform: rotate(45deg);
+  }
+  .open .header__toggle span:after {
+    opacity: 0;
+  }
+
+  .open .header__toggle span:before {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+
+  .header .container {
+    justify-content: space-between;
+  }
+
+  .header .header__auth,
+  .header .header__menu {
+    display: none;
+  }
+
+  .search__box {
+    transform: translateY(0);
+  }
+  .search__item {
+    width: 100%;
+  }
+  .search__box button {
+    margin: 10px auto 0px;
+  }
+  .category__icon {
+    width: 40px;
+    height: 40px;
+    border-width: 9px;
+    margin-bottom: 10px;
+  }
+  .title.little,
+  .title.little span,
+  .title span,
+  .title {
+    font-size: 36px;
+  }
+  .sub__icon {
+    display: none;
+  }
+}
